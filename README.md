@@ -1,27 +1,54 @@
-# AppBlog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+# Angular Frontend for Django Blog Application
 
-## Development server
+## Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This is the frontend of the Django blog application, built with Angular. The application allows users to interact with the backend API to register, log in, create, update, and manage blog posts and comments.
 
-## Code scaffolding
+## Project Structure
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **`src/app/`**: Contains the main application components, services, and modules.
+  - **`components/`**: Reusable components like login, register etc...
+  - **`services/`**: Contains Angular services for interacting with the backend API.
+  - **`models/`**: Defines TypeScript interfaces for data models like `Post` and `Comment`.
+  - **`app-routing.module.ts`**: Manages routing between different application views.
 
-## Build
+- **`environments/`**: Contains environment-specific configuration files.
+  - **`environment.ts`**: Development environment settings.
+  - **`environment.prod.ts`**: Production environment settings.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- **`angular.json`**: Configuration file for the Angular CLI.
+- **`package.json`**: Lists project dependencies and scripts for building and running the project.
+- **`tsconfig.json`**: TypeScript configuration file.
 
-## Running unit tests
+## Setup and Running the Project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Clone the Repository:**
+   ```
+   git clone https://github.com/Moolfel/frontent-blog-app.git
+   cd frontent-blog-app
+   ```
 
-## Running end-to-end tests
+2. **Install Dependencies:**
+   ```
+   npm install
+   ```
+Ensure You Have the Correct Node.js Version: Make sure you have Node.js version 16 installed on your machine. You can check your Node.js version by running:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
+```
+   node -v
+```
 
-## Further help
+3. **Run the Development Server:**
+   ```bash
+   ng serve
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   The application will be accessible at `http://localhost:4200/`.
+
+## Features
+
+- **User Registration and Login:** Users can register and log in to the application.
+- **Post Management:** Users can view, create, edit, and delete blog posts.
+- **Comment Management:** Users can view, add, and manage comments on posts.
+- **Responsive Design:** The application is designed to be responsive and works on different screen sizes.
