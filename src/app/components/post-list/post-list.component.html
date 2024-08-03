@@ -1,0 +1,16 @@
+<h2>Blog Posts</h2>
+<mat-list>
+  <mat-list-item *ngFor="let post of posts">
+    <h3 matLine><a [routerLink]="['/posts', post.id]">{{ post.title }}</a></h3>
+    <p matLine>{{ post.content | slice:0:100 }}...</p>
+  </mat-list-item>
+</mat-list>
+
+<!-- Conditionally display the message based on login status -->
+<ng-container *ngIf="isLoggedIn; else loginPrompt">
+  <button mat-raised-button color="primary" routerLink="/new-post">Create New Post</button>
+</ng-container>
+
+<ng-template #loginPrompt>
+  <p>Please <a routerLink="/login" style="color: blue;">login</a> to create a new post.
+</ng-template>

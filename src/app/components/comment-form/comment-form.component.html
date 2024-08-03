@@ -1,0 +1,15 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Add a Comment</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+        <mat-form-field>
+          <textarea matInput placeholder="Your comment" formControlName="content" required rows="3"></textarea>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit" [disabled]="commentForm.invalid">
+          Add Comment
+        </button>
+      </form>
+    </mat-card-content>
+  </mat-card>

@@ -1,0 +1,26 @@
+/* Container for the comment form */
+mat-card {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the form fields */
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  /* Style for the textarea */
+  textarea[matInput] {
+    resize: vertical;
+  }
+  
+  /* Style for the submit button */
+  button[mat-raised-button] {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+  }
+  

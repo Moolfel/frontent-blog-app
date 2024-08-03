@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <span>{{ title }}</span>
+  <span class="spacer"></span>
+  <button mat-button routerLink="/posts">Home</button>
+  <ng-container *ngIf="authService.currentUserValue; else loggedOut">
+    <button mat-button routerLink="/new-post">New Post</button>
+    <button mat-button (click)="logout()">Logout</button>
+  </ng-container>
+  <ng-template #loggedOut>
+    <button mat-button routerLink="/login">Login</button>
+    <button mat-button routerLink="/register">Register</button>
+  </ng-template>
+</mat-toolbar>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

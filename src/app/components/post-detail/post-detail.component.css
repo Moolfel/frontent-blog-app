@@ -1,0 +1,27 @@
+/* Styling for the comments section */
+mat-list {
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  mat-list-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  mat-list-item:last-child {
+    border-bottom: none; /* Remove border from last item */
+  }
+  
+  p[matLine] {
+    margin: 0;
+  }
+  
+  .login-message {
+    margin-top: 20px;
+    color: red;
+    font-style: italic;
+  }
+  
