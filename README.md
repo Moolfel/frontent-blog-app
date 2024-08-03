@@ -52,3 +52,9 @@ Ensure You Have the Correct Node.js Version: Make sure you have Node.js version 
 - **Post Management:** Users can view, create, edit, and delete blog posts.
 - **Comment Management:** Users can view, add, and manage comments on posts.
 - **Responsive Design:** The application is designed to be responsive and works on different screen sizes.
+
+**- Proxy Configuration for Frontend:**
+
+proxy.conf.json is added in the directory to configure the proxy settings.
+
+This setup was done intentionally to manage API calls and proxy settings for development purposes only.
